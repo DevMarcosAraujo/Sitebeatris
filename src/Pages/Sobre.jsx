@@ -1,5 +1,5 @@
 import imagemBeatriz from '../assets/CONVITE-00239.JPG';
-
+import imagemBeatriz2 from '../assets/CONVITE-00238.JPG';
 function Sobre() {
   return (
     <div className="sobre-container">
@@ -24,7 +24,7 @@ function Sobre() {
 
           {/* Imagem no canto inferior direito */}
           <div className="imagem-inferior">
-            <img src={imagemBeatriz} alt="Doutora Beatriz" />
+            <img src={imagemBeatriz2} alt="Doutora Beatriz" />
           </div>
 
           <p>
