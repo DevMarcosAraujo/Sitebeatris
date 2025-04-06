@@ -1,0 +1,420 @@
+/* Estilos gerais */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Adiciona um espaçamento abaixo do Header */
+.main-content {
+  padding-top: 70px; /* Ajuste conforme necessário */
+}
+
+/* Estilos específicos para a página de início */
+.pagina-inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 60px 80px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.pagina-inicio .texto {
+  max-width: 600px;
+  margin: 0 auto;         /* Centraliza horizontalmente */
+  text-align: center;     /* Alinha o texto ao centro */
+}
+
+.pagina-inicio .texto h1 {
+  font-size: 45px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.pagina-inicio .texto p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.pagina-inicio .imagem {
+  width: 45%;
+  height: 500px;
+  background: linear-gradient(135deg, #d8b4fe, #fbcfe8, #ffffff);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pagina-inicio .imagem img {
+  height: 80%;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* inicio do formshome */
+.formulario-consulta {
+  background: linear-gradient(135deg, #d8b4fe, #fbcfe8, #ffffff);
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 3rem 2rem;
+}
+
+.formulario-consulta h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.formulario-consulta p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.formulario-consulta form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Inputs com cor clara, tamanho maior e sombra no hover */
+.formulario-consulta input {
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  width: 380px;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-consulta input:hover,
+.formulario-consulta input:focus {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transform: scale(1.02);
+  outline: none;
+}
+
+/* Nome em uma linha */
+.formulario-consulta .name {
+  width: 150px;
+  padding: 2rem;
+}
+
+/* Email quebra linha */
+.formulario-consulta .email {
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+/* Botão com destaque também */
+.formulario-consulta button {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 1rem;
+}
+
+.formulario-consulta button:hover {
+  background-color: #005ecb;
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* inicio pagina sobre*/
+.sobre-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.sobre-conteudo {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.texto-sobre {
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.8;
+  color: #333;
+  flex: 1;
+  position: relative;
+}
+
+.texto-sobre h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.texto-sobre p {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+/* Imagem do canto superior esquerdo */
+.imagem-superior {
+  padding: 30px;
+  flex-shrink: 0;
+}
+
+.imagem-superior img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagem inferior à direita, flutuando no final do texto */
+.imagem-inferior {
+  float: right;
+  margin: 20px 0 20px 20px;
+}
+
+.imagem-inferior img {
+  width: 180px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Consulta inicio aqui*/
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+.consulta-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.consulta-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.consulta-header h1 {
+  font-size: 2.5rem;
+  color: #2d6cdf;
+}
+
+.consulta-header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+.consulta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.consulta-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s, background-color 0.3s;
+  border: 2px solid transparent;
+}
+
+.consulta-card:hover {
+  background-color: #e7f0ff;
+  border-color: #2d6cdf;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+.consulta-card h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.consulta-icon {
+  font-size: 2rem;
+}
+
+/* inicio dos contatos aqui*/
+
+.contato-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contato-titulo {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.contato-subtitulo {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+.campo label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.campo input,
+.campo textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+button {
+  padding: 14px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2c80b4;
+}
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  /* Página de Início */
+  .pagina-inicio {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .pagina-inicio .imagem {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+  }
+
+  .pagina-inicio .texto h1 {
+    font-size: 32px;
+  }
+
+  .pagina-inicio .texto p {
+    font-size: 16px;
+  }
+
+  /* Formulário Consulta */
+  .formulario-consulta input,
+  .formulario-consulta .name,
+  .formulario-consulta .email {
+    width: 100% !important;
+    padding: 1rem;
+  }
+
+  /* Página Sobre */
+  .sobre-conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagem-superior {
+    padding: 20px 0;
+  }
+
+  .imagem-superior img,
+  .imagem-inferior img {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .texto-sobre {
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* Consulta */
+  .consulta-container {
+    padding: 10px;
+  }
+
+  .consulta-header h1 {
+    font-size: 2rem;
+  }
+
+  .consulta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Contato */
+  .contato-container {
+    padding: 20px;
+    margin: 30px 10px;
+  }
+
+  .formulario {
+    gap: 16px;
+  }
+
+  
+}

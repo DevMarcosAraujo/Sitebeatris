@@ -1,0 +1,192 @@
+/* Header fixo no topo */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #d8b4fe; /* Verde intermediário */
+    box-shadow: 0 2px 10px rgba(104, 70, 43, 0.2); /* Marrom escuro com transparência */
+    padding: 15px 20px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Efeito de sombra ao rolar a página */
+  .header.scrolled {
+    box-shadow: 0 4px 15px rgba(104, 70, 43, 0.3);
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .logo:hover {
+    color: #94654c; /* Verde mais claro */
+  }
+  
+  /* Menu Desktop */
+  .desktop-menu ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .desktop-menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .desktop-menu ul li a:hover {
+    color: #94654c; /* Verde pastel no hover */
+    transform: scale(1.1);
+  }
+  
+  /* Botão "Falar Comigo" */
+ 
+  .contact-button:hover {
+    background: #94654c; /* Verde mais claro no hover */
+    transform: scale(1.1);
+  }
+  
+  /* Botão Menu Mobile */
+  .menu-button {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+    margin-right: 30px;
+    position: absolute;
+    right: 15px;
+    top: 55%; /* Move um pouco mais para baixo */
+    transform: translateY(-50%);
+    color: white;
+  }
+  
+  /* Menu Mobile */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%; /* Antes era -100%, agora começa um pouco mais visível */
+    width: 70%;
+    height: 100vh;
+    background: #9bde87; /* Marrom médio */
+    transition: all 0.4s ease-in-out;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    padding:20px;
+  }
+  
+  /* Efeito de deslizar o menu */
+  .mobile-menu.open {
+    left: 0; /* Agora o menu abre mais centralizado */
+    animation: fadeInLeft 0.3s ease-in-out;
+  }
+  
+  /* Animação de entrada */
+  @keyframes fadeInLeft {
+    from {
+      left: -80%;
+    }
+    to {
+      left: 10%;
+    }
+  }
+  
+  .mobile-menu ul {
+    list-style: none;
+    padding: 20px;
+  }
+  
+  .mobile-menu ul li {
+    padding: 15px 0;
+  }
+  
+  .mobile-menu ul li a {
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .mobile-menu ul li a:hover {
+    color: #94654c; /* Verde clarinho */
+    transform: translateX(5px);
+  }
+  
+  /* Botão Fechar Menu */
+  .close-button {
+    font-size: 32px;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: white;
+    transition: 0.3s;
+  }
+  
+  .close-button:hover {
+    color: #beffa8;
+    transform: rotate(90deg);
+  }
+  
+  /* Responsivo: Tablets (720px) */
+  @media (max-width: 720px) {
+    .desktop-menu {
+      display: none;
+    }
+  
+    .menu-button {
+      display: block;
+    }
+  
+    .contact-button {
+      display: inline-block;
+    }
+  
+    /* Ajustando o menu mobile */
+    .mobile-menu {
+      width: 60%;
+    }
+  }
+  
+  /* Responsivo: Mobile (480px) */
+  @media (max-width: 480px) {
+    .mobile-menu {
+      width: 80%;
+    }
+  
+    .mobile-menu ul li a {
+      font-size: 18px;
+    }
+  
+    .contact-button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  }
+  
