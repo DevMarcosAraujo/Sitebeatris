@@ -1,5 +1,5 @@
 import "../App.css";
-import imagemBeatriz from '../assets/CONVITE-00239.JPG';
+import imagemBeatriz1 from '../assets/CONVITE-00237.JPG';
 import FormsHome from "../Componets/Agendahome/FormsHome";
 
 
@@ -16,7 +16,7 @@ function Inicio() {
           <FormsHome />
         </div>
         <div className="imagem">
-          <img src={imagemBeatriz} alt="Doutora Beatriz" />
+          <img src={imagemBeatriz1} alt="Doutora Beatriz" />
         </div>
       </div>
       
