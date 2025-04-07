@@ -1,5 +1,5 @@
-import imagemBeatriz from '../assets/CONVITE-00239.JPG';
-import imagemBeatriz2 from '../assets/CONVITE-00238.JPG';
+import imagemBeatriz from '../assets/CONVITE-00239.jpg';
+import imagemBeatriz2 from '../assets/CONVITE-00238.jpg';
 function Sobre() {
   return (
     <div className="sobre-container">

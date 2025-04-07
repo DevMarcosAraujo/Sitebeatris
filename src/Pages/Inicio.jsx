@@ -1,5 +1,5 @@
 import "../App.css";
-import imagemBeatriz1 from '../assets/CONVITE-00237.JPG';
+import imagemBeatriz1 from '../assets/CONVITE-00237.jpg';
 import FormsHome from "../Componets/Agendahome/FormsHome";
 
 
